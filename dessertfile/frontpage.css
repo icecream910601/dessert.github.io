@@ -1,0 +1,931 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 避免border box 原因跑版 */
+body{
+  box-sizing: border-box;
+}
+
+/* *{
+  outline:1px solid red;
+} */
+
+.wrap{
+  /* max-width: 1024px; */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+@media(max-width:768px)  {
+  .wrap{
+    flex-direction: column;
+    
+  }	
+}
+
+
+
+
+
+.navbar {
+  width: 100%;
+}
+
+.material-icons{
+  color: #3F5D45;
+  user-select: none;
+}
+
+.text-accent{
+  color: #3F5D45 !important;
+  font-size:24px;
+}
+
+
+ */
+ */
+
+
+
+
+.banner{
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  position: relative;
+}
+
+@media(max-width:768px)  {
+  .banner{
+    max-width: 100%;  
+  }	
+}
+
+.banner-pic{
+  background-image: url(https://bit.ly/2OhbMHr);
+  background-size: cover;
+  background-repeat:no-repeat ;
+  max-width: 940px;
+  height: 496px;
+  background-position: center;
+  margin: 0 auto;
+}
+
+@media(max-width:768px)  {
+  .banner-pic{
+    max-width: 768px;
+    /* height: auto; */
+    /* height: 277px; */
+
+  }	
+}
+
+.banner-words{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  top:407px;
+  /* right: 122px; */
+  margin: 0 auto;
+  margin-top: -5%;
+  /* flex-wrap: wrap; */
+}
+
+@media(max-width:768px)  {
+  .banner-words{
+    margin-top: 0;
+    width: 100%;
+  }	
+}
+
+.banner-words a{
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+   color: white;
+   display: block;
+   padding: 50px 0px;
+   background-color: rgba(63,93,69,0.5);    
+   backdrop-filter: blur(5px); 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+
+.banner-words a:hover{
+ background: rgb(255, 225, 128,0.5);
+ 
+}
+
+.banner-words-title1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 260px;
+  height: 256px;
+  margin: 1px;
+  background-image: url(https://bit.ly/2R5tqwD);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+  color: white;
+   font-size: 24px;
+  
+  max-width: 260px;
+  /* height: 256px; */
+  /* line-height: 256px; */
+  letter-spacing: 10px;
+    
+   writing-mode: vertical-lr;
+   text-align: center;
+  
+ }
+
+
+
+
+@media(max-width:768px)  {
+  .banner-words-title1{
+    width: 33%;
+    font-size:20px;   
+  }	
+}
+
+
+.banner-words-title2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 260px;
+  height: 256px;
+  margin: 1px;
+  background-image: url(https://bit.ly/2Dwoxd7);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+  color: white;
+   font-size: 24px;
+  
+  max-width: 260px;
+  /* height: 256px; */
+  /* line-height: 256px; */
+  letter-spacing: 10px;
+    
+   writing-mode: vertical-lr;
+   text-align: center;
+  
+ }
+
+
+
+
+@media(max-width:768px)  {
+  .banner-words-title2{
+    width: 33%;
+    font-size:20px;   
+  }	
+}
+
+
+
+.banner-words-title3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 260px;
+  height: 256px;
+  margin: 1px;
+  background-image: url(https://bit.ly/2OUteif);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+
+  color: white;
+   font-size: 24px;
+  
+  max-width: 260px;
+  /* height: 256px; */
+  /* line-height: 256px; */
+  letter-spacing: 10px;
+    
+   writing-mode: vertical-lr;
+   text-align: center;
+  
+ }
+
+
+
+
+@media(max-width:768px)  {
+  .banner-words-title3{
+    width: 33%;
+    font-size:20px;   
+  }	
+}
+
+
+
+
+
+
+
+.reason-choice{
+  margin-top: 150px;
+  max-width: 1024px;
+  height: 420px;
+  background-color: #EAF0ED;
+  position: relative; 
+  margin: 50px auto;
+  
+}
+
+@media(max-width:768px)  {
+  .reason-choice{
+    margin-top: 100px;
+  background: white;
+  /* margin-bottom: 250px; */
+  }	
+}
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  top:-5%;
+
+}
+
+@media(max-width:768px)  {
+  .wrapper{
+   flex-direction: column;
+   align-items: center;
+   
+   /* max-width: 768px;
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   justify-content: center; */
+  }	
+
+  .reason-choice-pic{order: 2;}
+  .reason-choice-content{order: 3;}
+  .reason-choice-title{order: 1;}
+
+}
+
+.reason-choice-pic {
+  background-image: url(https://bit.ly/2xPn7Eq);
+ 
+  width: 40%;
+  aspect-ratio: 1; 
+  /* height: 460px; */
+  background-size: cover;
+  background-position:center;
+ }
+
+ @media(max-width:768px)  {
+  .reason-choice-pic {
+    width: 100%;
+    height: 250px
+    /* height: 250px; */
+  }	
+}
+
+.reason-choice-content{
+  width: 256px;
+  height: 480px;
+  color: #8DA291;
+  font-size: 16px;
+  writing-mode: vertical-rl;
+  letter-spacing: 6px;
+  line-height: 32px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  box-sizing: border-box;
+}
+
+
+@media(max-width:768px)  {
+  .reason-choice-content{
+    width: 100%;
+    height: auto;
+    writing-mode: horizontal-tb;
+    letter-spacing: 0px;
+    line-height: 32px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #EAF0ED;
+        
+  }	
+}
+
+.reason-choice-title{
+  background-image: url(ICON/lg-為什麼選擇了做甜點.png);
+  background-repeat: no-repeat;
+  height: 307px;
+  width: 88px;
+}
+
+@media(max-width:768px)  {
+  .reason-choice-title{
+    background-image: url(ICON/sm-橫式-為什麼選擇了做甜點.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 50px;
+
+  }	
+}
+
+
+
+
+
+.reason-eat{
+  margin-top: 150px;
+  margin-bottom: 150px;
+  max-width: 1024px;
+  height: 420px;
+  background-color: #EAF0ED;
+  position: relative;
+  margin: 50px auto;
+  /* display: flex; */
+  /* justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap; */
+}
+
+@media(max-width:768px)  {
+  .reason-eat{
+  background: white;
+  margin-bottom: 200px;
+  margin-top: 250px;
+  }	
+}
+
+/* @media(max-width:375px)  {
+  .reason-eat{
+  width: 100%;
+}	
+} */
+
+.wrapper2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+
+  top:-5%;
+}
+
+@media(max-width:768px)  {
+  .wrapper2{
+
+    flex-direction: column;
+    align-items: center;
+   /* display: flex;
+   flex-direction: column-reverse;
+    justify-content: center; */
+
+  }	
+
+  .reason-eat-pic{order: 2;}
+  .reason-eat-content{order: 3;}
+  .reason-eat-title{order: 1;}
+}
+
+.reason-eat-pic {
+  background-image: url(https://bit.ly/2zzAQS4);
+  width: 40%;
+  aspect-ratio: 1;
+  /* max-width: 460px; */
+  /* height: 460px; */
+  background-size: cover;
+  background-position:center;
+
+}
+
+@media(max-width:768px)  {
+  .reason-eat-pic {
+    width: 100%;
+    height: 250px
+    /* max-width: 768px;
+    height: auto; */
+    /* height: 250px; */
+   
+  }	
+}
+
+.reason-eat-title{
+  background-image: url(ICON/lg-為什麼一定要吃甜點.png);
+  background-repeat: no-repeat;
+ 
+  width: 88px;
+   /* height: 307px; */
+}
+
+@media(max-width:768px)  {
+  .reason-eat-title{
+    /* display: none; */
+    background-image: url(ICON/sm-橫式-為什麼一定要吃甜點.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    /* width: 196px; */
+    height: 60px;
+    margin-bottom: 50px;
+  }	
+}
+
+.reason-eat-content{
+  width: 256px;
+  height: 480px;
+  color: #8DA291;
+  font-size: 16px;
+  writing-mode: vertical-rl;
+  letter-spacing: 6px;
+  line-height: 32px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 55px;
+  box-sizing: border-box;
+}
+
+@media(max-width:768px)  {
+  .reason-eat-content{
+    /* max-width: 315px;
+    height: 252px;
+    writing-mode: horizontal-tb;
+    letter-spacing: 0px;
+    line-height: 16px;
+    margin: 0 auto;
+  */
+    width: 100%;
+    height: auto;
+    writing-mode: horizontal-tb;
+    letter-spacing: 0px;
+    line-height: 32px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #EAF0ED;
+
+  }	
+}
+
+
+
+
+
+.no-reason{
+  /* padding-top: 100px; */
+  max-width: 1024px;
+  margin: 0px auto;
+  background-image: url(ICON/lg-想吃甜點是不需要理由的.png);
+
+  width: 89px;
+  height: 327px;
+  background-repeat: no-repeat;
+}
+
+@media(max-width:768px)  {
+  .no-reason {
+    background-image: url(ICON/sm-橫式-想吃甜點是不需要理由的.png);
+    width: 226px;
+    height: 60px;
+
+  }	
+}
+
+
+
+
+
+.dessert-list{
+  padding-top: 100px;
+  padding-bottom: 150px;
+  max-width: 1024px;
+  display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+ margin: 0 auto;
+}
+
+@media(max-width:768px)  {
+  .dessert-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }	
+}
+
+
+.dessert-list-block{
+  width: 300px;
+ margin: 1px;
+  display: flex;
+  flex-direction: column;
+}
+
+.block-pic img{
+  width: 300px;
+  height: 315px;
+}
+
+.block-pic{
+  position: relative;
+  z-index: 0;
+}
+
+.select{
+  position: absolute;
+  writing-mode: vertical-rl;
+  background: #3F5D45;
+  color: #EAF0ED;
+  font-size: 16px;
+  line-height: 36px;
+  padding: 5px 0px;
+  top: 0;
+  left: 20px;
+}
+
+
+
+
+.starred-icon{
+  opacity: 0;
+}
+
+input.ui-checkbox{
+  height: 0;
+  width: 0;
+}
+
+.ui-checkbox:checked + .starred-icon{
+  opacity: 1;
+}
+
+.starred-icon, .unstarred-icon{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.material-icons{
+  color: #3F5D45;
+  user-select: none;
+}
+
+
+
+
+/* .heart {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  z-index: 1;
+} */
+
+.block-name{
+  display: flex;
+  justify-content: space-between;
+}
+
+.name{
+  color: #3F5D45;
+  font-size: 20px;
+  line-height: 40px;
+  font-family: PingFang TC; 
+}
+
+.price{
+  color: #3F5D45;
+  font-size: 20px;
+  line-height: 40px;
+  font-family: PingFang TC;
+}
+
+.block-cart{
+  background: #EAF0ED;
+  color: #3F5D45;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  font-family:PingFang TC;
+  font-weight: bold;
+
+}
+
+.block-cart a{
+  text-decoration: none;
+  color: #3F5D45;
+  display: block;
+}
+
+
+.block-cart a:hover{
+  
+  color: #3F5D45;
+  
+}
+
+
+/* 
+@media(max-width:375px)  {
+  .footer{
+  width: 100%;
+}	
+} */
+
+
+
+
+
+
+
+
+.footer{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+.footer-email{
+  background: #3F5D45;
+  /* max-width: 1024px; */
+  width: 100%;
+ 
+  height: 116px;
+   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media(max-width:768px)  {
+  .footer-email{
+    flex-wrap: wrap;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }	
+}
+
+
+
+.footer-email-subscribe{
+  display: flex;
+  /* width: 50%; */
+  padding:12px;
+}
+
+
+@media(max-width:768px)  {
+  .footer-email-subscribe{
+    /* width:100% ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }	
+}
+
+
+.subscribe-logo img{
+  max-width: 40px;
+  height: 40px;
+}
+
+.subscribe-words{
+  width: 100%;
+  /* width: 216px; */
+  height: 40px;
+  color: #EAF0ED;
+  font-size: 24px;
+  line-height: 40px; 
+}
+
+
+
+
+
+
+.footer-email-blank{
+  /* width: 50%; */
+  width: 380px;
+  height: 56pX;
+  display: flex;
+  
+ position: relative;
+  
+}
+
+
+@media(max-width:768px)  {
+  .footer-email-blank{
+    width:50% ;
+    
+  }	
+}
+
+.test{
+  height: 52px;
+  font-size: 20px;
+  text-indent: 40px;
+  border:none;
+   width: 100%;
+   z-index: 1;
+   position: relative;
+  
+}
+
+
+@media(max-width:768px)  {
+  .test{
+    text-indent: 30px;
+    font-size: 8px  ;
+    
+  }	
+}
+
+
+
+.whiteblock{
+  position: absolute;
+  left: 6px;
+  top: 14px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 24px;
+  height: 24px;  */
+  
+}
+
+/* .whiteblock img{
+padding: 10px;
+  display: block;
+  
+} */
+
+
+
+.yellowblock{
+
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: block;
+  width: 52px;
+  height: 52px;
+  background-color: #ffe180;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+/* .yellowblock img{
+  padding-top: 16px;
+  display: block;
+  margin:auto;
+  width: 24px;
+  height: 24px;
+ 
+} */
+
+/* .yellowblock img a{
+  display: block;
+} */
+
+
+
+
+.footer-allright{
+ width:100%;
+  height: 314px;
+  background: #EAF0ED;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-allright-info{
+  display: flex;
+  flex-direction: column; 
+}
+
+.info-logo{
+  padding-top: 20px;
+}
+
+.info-words{
+  padding-top: 100px;
+  font-family: PingFang TC;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3F5D45;
+  width: 100%; 
+}
+
+.info-icon img{
+  padding-top: 20px;
+  width: 52px;
+  height: 52px;
+}
+
+.footer-allright-slogan{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+ 
+}
+
+
+
+/* .slogan-pic{
+ padding-top: 20px;
+} */
+
+.allrights-words{
+  padding-top: 10px;
+  color: #3F5D45;
+  font-size: 16px;
+  font-family: Times;
+  
+}
