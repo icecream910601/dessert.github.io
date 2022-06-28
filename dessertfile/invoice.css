@@ -183,15 +183,41 @@ line-height: 40px;
     color: #3F5D45;
     background: #EAF0ED;
     font-size: 20px;
+    border: 1px solid  #3F5D45;
 }
+
+
+.way a{
+  text-decoration: none;
+  color: #3F5D45;
+  display: block;
+}
+
+.way a:hover{
+  color: #EAF0ED;
+    background: #3F5D45;
+}
+
 
 .way2{
     width: 50%;
-    color: #EAF0ED;
-    background: #3F5D45;
+    color: #3F5D45;
+    background: #EAF0ED;
     font-size: 20px;
+    border: 1px solid  #3F5D45;
 }
 
+
+.way2 a{
+  text-decoration: none;
+  color: #3F5D45;
+  display: block;
+}
+
+.way2 a:hover{
+  color: #EAF0ED;
+    background: #3F5D45;
+}
 
 
 
