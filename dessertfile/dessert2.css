@@ -53,8 +53,8 @@ body{
   }
   
 
-/* 
-  *{outline:1px solid red;
+
+  /* *{outline:1px solid red;
   }  */
 
 
@@ -283,6 +283,7 @@ body{
     
     text-align:center;
     display:flex;
+    justify-content: end;
     flex-wrap: wrap;
      
 }
@@ -389,14 +390,27 @@ body{
 
 
 .page{
-    width: 240px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: end;
-    margin-right: 50px;
+    margin-right: 0px;
     padding-bottom: 10px;
+
+   
     
 }
+
+@media(max-width:768px)  {
+  .page{
+  
+    justify-content: center;
+    
+  }	
+}
+
+
+
 
 .pages{
 
@@ -405,6 +419,8 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+
 
 .pages li{
     width: 60px;
@@ -434,5 +450,8 @@ body{
     background: #3F5D45;
 
 } */
+
+
+
 
 
